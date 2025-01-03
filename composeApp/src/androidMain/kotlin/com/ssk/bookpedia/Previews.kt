@@ -4,6 +4,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import com.ssk.bookpedia.book.domain.Book
+import com.ssk.bookpedia.book.presentation.book_detail.components.BookChip
 import com.ssk.bookpedia.book.presentation.book_list.BookListScreen
 import com.ssk.bookpedia.book.presentation.book_list.BookListState
 import com.ssk.bookpedia.book.presentation.book_list.components.BookListItem
@@ -61,5 +62,13 @@ private fun BookListItemPreview() {
             firstPublishYear = "2018"
         ),
         onClick = {}
+    )
+}
+
+@Preview
+@Composable
+fun BookChipPreview() {
+    BookChip(
+        chipContent = {}
     )
 }
